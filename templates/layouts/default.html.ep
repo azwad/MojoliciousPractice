@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta hettp-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title><%= $site_title %></title>
+</head>
+	<body style="width:500px; margin:0;">
+	<a href="/"><%= $site_title %></a>
+		<%=content %>
+	<p>
+	<a href=./>BACK</a>
+	</body>
+</html>
+

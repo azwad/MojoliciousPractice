@@ -1,0 +1,23 @@
+% layout 'default';
+<h1><%= $page_title %></h1>
+		<form method="post" action="<%= url_for('upload_image') %>" enctype = "multipart/form-data">
+			<div>
+				File name
+				<input type="file" name="image">
+				<input type="submit" value="Upload">
+			</div>
+		</form>
+		<div>
+		
+% my $images = $result->{images}; my $image_base = $result->{image_base};
+	<% foreach my $image (@$images) { %>
+		<div>
+			<hr>
+			<div>Image: <%= $image %></div>
+			<div>
+				<img src="<%= "/$image_base/$image" %>" width='400px' />
+			</div>
+		<div>
+	<% } %>
+		</div>
+

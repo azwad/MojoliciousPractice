@@ -1,0 +1,4 @@
+% layout 'default';
+<h2><%= $page_title %></h2>
+<%= $message %>
+

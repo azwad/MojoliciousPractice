@@ -1,0 +1,5 @@
+% layout 'default';
+<h2><%= $page_title %></h2>
+% for my $title (sort keys %$link) {
+	<a href="<%= $link->{$title} %>"><%= $title %></a><br>
+%}
